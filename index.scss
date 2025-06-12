@@ -1,0 +1,117 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+
+.appContainer {
+  background-color: gray;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.tasksContainer {
+  min-height: 500px;
+  min-width: 500px;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #0a6b76;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.taskForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  // flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  label {
+    font-size: 15px;
+    padding: 5px;
+  }
+  input {
+    width: 350px;
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 6px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+  button:nth-child(3):hover {
+    background-color: #fff;
+    color: black;
+  }
+}
+
+.botoncito {
+  width: 80px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #adb5bd;
+  background: #03312e;
+}
+
+.botoncito:hover {
+  background: rgb(5, 205, 5);
+  color: white;
+  border: 2px solid black;
+}
+
+.botoncito-form {
+  @extend .botoncito;
+  max-width: 70px;
+  font-size: 14px;
+}
+
+.botoncito-form:nth-child(1):hover {
+  background-color: red;
+}
+
+.botoncito-form:nth-child(2):hover {
+  background-color: white;
+  color: black;
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.listItem {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.taskTitle {
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.buttonsDiv {
+  display: flex;
+  justify-content: space-between;
+  min-width: 150px;
+}
